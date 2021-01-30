@@ -2,6 +2,27 @@ require("dotenv").config();
 const queries = require("./src/utils/algolia");
 const config = require("./config");
 const plugins = [
+  {
+    resolve: `gatsby-plugin-s3`,
+    options: {
+      bucketName: "partners.newrelic-es.com",
+    },
+  },
+  {
+    resolve: 'gatsby-plugin-newrelic',
+    options: {
+      configs: {
+        instrumentationType: 'proAndSPA',
+          accountId: '1147177',
+          trustKey: '1147177',
+          agentID: '335659352',
+          licenseKey: 'd2dacf146e',
+          applicationID: '335659352',
+          beacon: 'bam.nr-data.net',
+          errorBeacon: 'bam.nr-data.net'
+      }
+    }
+  },
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
   {

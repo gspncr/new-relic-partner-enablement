@@ -1,32 +1,26 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'http://partners.newrelic-es.com',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
+    logo: 'https://newrelic.com/assets/newrelic/source/NewRelic-logo-bug-w.svg',
+    logoLink: '/',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+      "<a href='/'><img class='img-responsive' src='https://newrelic.com/assets/newrelic/source/NewRelic-logo-bug-w.svg' alt='New Relic logo' /></a>",
+    githubUrl: 'https://github.com/gspncr/new-relic-partner-enablement',
     helpUrl: '',
     tweetText: '',
     social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
+		    <a href="https://twitter.com/newrelic" target="_blank" rel="noopener">
 		      <div class="twitterBtn">
 		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
 		      </div>
 		    </a>
 		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+			`,
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
@@ -38,24 +32,32 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/lab1', // add trailing slash if enabled above
+      '/lab2',
+      '/lab3',
+      '/lab4',
+      '/lab5',
+      '/lab6',
+      '/lab7',
+      '/lab8',
+      '/lab9',
+      '/lab10'
     ],
     collapsedNav: [
       '/codeblock', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [{ text: 'New Relic', link: 'https://newrelic.com' }],
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+      "<div class='greenCircle'></div><a href='https://docs.google.com/forms/d/e/1FAIpQLSfaNQGgIpKER_e3ZQEEmR4gODUMueArQbBWlFHpB3YFx1Y32Q/viewform'>go to self assessment</a>",
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'New Relic Partner Enablement',
+    description: 'A website for partner relics to get started with learning New Relic. ',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    docsLocation: 'https://github.com/gspncr/new-relic-partner-enablement/tree/master/content',
+    favicon: 'https://newrelic.com/favicon.ico',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.

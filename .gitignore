@@ -5,3 +5,10 @@ node_modules
 *.env
 
 .idea/
+README.md
+README.md
+package-lock.json
+Dockerfile
+LICENSE
+netlify.toml
+Dockerfile
