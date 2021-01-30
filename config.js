@@ -56,7 +56,7 @@ const config = {
     title: 'New Relic Partner Enablement',
     description: 'A website for partner relics to get started with learning New Relic. ',
     ogImage: null,
-    docsLocation: 'https://github.com/gspncr/new-relic-partner-enablement/tree/master/content',
+    docsLocation: 'https://github.com/gspncr/new-relic-partner-enablement/tree/main/content',
     favicon: 'https://newrelic.com/favicon.ico',
   },
   pwa: {
