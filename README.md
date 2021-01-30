@@ -8,6 +8,9 @@ The New Relic Partner Enablement Microsite is here to enable partners with their
 
 [Public site](http://partners.newrelic-es.com/) is intended to be the default access  
 
+## Contributing Content
+We would love to have you contribute content to the microsite. We are accepting pull requests.
+
 ## Local Builds
 
 `npm i` to install the dependencies
@@ -18,22 +21,26 @@ The New Relic Partner Enablement Microsite is here to enable partners with their
 
 ## Remote Builds
 
-_Relic Instructions:_
+First, have had a local build. Then:
 
-If you are intending to publish a new release of the site you need to be in the AWS ES org. 
-
-### Pre requisite: have the AWS CLI and a local build
 ```shell
 pip install awscli
 aws configure
 ```
-That's pretty much it! Then `npm run build && npm run deploy` to publish it to the s3 bucket `partners.newrelic-es.com`.
+Modify [package.json](/blob/main/package.json) to include the name of your s3 bucket. 
 
-The s3 bucket has an associated Cloudfront distribution which in turn has a Route 53 hosted zone. Changes to the bucket will directly go to the hosted zone. Slack'ing gspencer is the preferred approach - but you can do a remote build if Gary is out.
+That is essentially all! There are also [Gatsby docs](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/deploying-to-s3-cloudfront) - npm package is already included in this repo.
 
-_Public instructions:_
+That's pretty much it! Then `npm run build && npm run deploy` 
 
-You can follow the same as above but reconfigure it to your own S3 bucket. That is essentially all, but there are [Gatsby docs](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/deploying-to-s3-cloudfront) walking through the steps.
+### Relic Remote Builds
+Following the above instructions and being a member of the AWS ES Org (no need to change s3 bucket).
+
+If you're a Relic wishing to submit new content, you should enter a pull request and not perform a remote build.
+
+The s3 bucket has an associated Cloudfront distribution which in turn has a Route 53 hosted zone and record. Changes to the bucket will directly go to the hosted zone. 
+
+Slack'ing gspencer is the preferred approach - but you can do a remote build if Gary is out and you really need to.
 
 ## Support
 
