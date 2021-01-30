@@ -3,12 +3,13 @@ public
 node_modules
 *DS_Store
 *.env
-
 .idea/
-README.md
-README.md
 package-lock.json
 Dockerfile
 LICENSE
 netlify.toml
 Dockerfile
+.prettierrc
+.eslintrc.json
+.editorconfig
+.dockerignore
