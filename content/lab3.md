@@ -9,26 +9,34 @@ New Relic Synthetics allows you to learn about problems before your customers do
 # Step 1: Creating a simple ping test
 A ping monitor is used to track up/down availability.
 
-In [New Relic Synthetics](https://synthetics.newrelic.com/), select *Add new*. Select *Ping* for the monitor type.
-![](https://i.imgur.com/PKCOtYk.png)
+In [New Relic Synthetics](https://synthetics.newrelic.com/), select *Create monitor*. Select *Availability* for the monitor type.
+![](images/lab3/lab3-1.png)
 
-Give your monitor some meaningful name. Include the output URL as in the URL field. The validation string field is optional.
-![](https://i.imgur.com/NVtQRzh.png)
+Give your monitor some meaningful name. Include the URL of the blog you created. Select a time period for how frequently the monitor should run.
+There is an optional step to add tags at this point. You can also extend the *Advanced Options* to add verification steps.
+![](images/lab3/lab3-2.png)
 
-Select a monitoring location, or many. At this point select Do not notify anyone. And create your monitor
-![](https://i.imgur.com/NVtQRzh.png)
+Select a monitoring location, or many. At this point select Do not notify anyone. And save your monitor
+![](images/lab3/lab3-3.png)
+
+You will be redirected to the monitor summary page. You will see results shortly, depending on the frequency of the monitor.
+![](images/lab3/lab3-4.png)
 
 # Step 2: Creating a simple browser test
 A simple browser test loads a full page of a given URL. This provides deep data insight such as a breakdown of page resources and timelines.
 
-In New Relic Synthetics, select *Add new*. Select *Simple Browser* for the monitor type.
-![](https://i.imgur.com/5Ohn658.png)
+In New Relic Synthetics, select *Create monitor*. Select *Page load performance* for the monitor type.
+![](images/lab3/lab3-5.png)
 
-Give your monitor some meaningful name. Include the output URL as in the URL field. Include some text from your blogs homepage for the validation string.
-![](https://i.imgur.com/gCWUVkB.png)
+Give your monitor some meaningful name. Include the URL of the blog you created. Set the frequency for the monitor to run.
+At this point you should also expand the *Advanced Options* and validate the presence of some text on your blogs homepage.
+![](images/lab3/lab3-6.png)
 
-Select a monitoring location, or many (be mindful of your consumption). At this point select Do not notify anyone. And create your monitor.
-![](https://i.imgur.com/ozUW7YA.png)
+Select a monitoring location, or many (be mindful of your consumption). And create your monitor.
+![](images/lab3/lab3-7.png)
+
+You will be redirected to the monitor summary page. You will see results shortly, depending on the frequency of the monitor.
+![](images/lab3/lab3-8.png)
 
 # Step 3: Creating a scripted browser test
 A scripted browser test lets you test key workflows for your website. Scripted monitors are powered by Selenium WebDriverJS. Each time your script runs, Synthetics creates a Selenium-driven Google Chrome browser that navigates your website and follows each step of the script.
